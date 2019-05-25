@@ -58,7 +58,7 @@ html, body{
     color: rgb(244, 179, 66);
 }
 .player-score {
-    background-color: rgba(145, 15, 143,0.4);
+    background-color: rgba(145, 15, 143,0.2);
     border: 1px solid rgb(145, 15, 143);
     border-radius:  5px;
     padding: 5px 5px;

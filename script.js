@@ -10,7 +10,6 @@ var board = ['','','','','','','','',''];
 var boardRef = document.querySelector('#board');
 var btnNew = document.querySelector('#btn-new');
 var resultPanel = document.getElementById('result');
-btnNew.style.display = 'none';
 
 displayResults();
 
@@ -28,13 +27,11 @@ boardRef.addEventListener('click',function(event){
             scores[currentPlayer] += 1;
             displayResults();
             boardRef.style.pointerEvents = 'none';
-            btnNew.style.display = 'block';
         } else if (result === 1) {
             (currentPlayer === p1) ? currentPlayer = p2 : currentPlayer = p1;
         } else if (result === 2){
             resultPanel.textContent = "it´s a TIE";
             boardRef.style.pointerEvents = 'none';
-            btnNew.style.display = 'block';
         }
     }
 });
@@ -45,7 +42,6 @@ btnNew.addEventListener('click',function(){
     resetBoard();
     resultPanel.textContent = "";
     boardRef.style.pointerEvents = 'auto';
-    btnNew.style.display = 'none';
 });
 
 function isPositionAvailable(position){
