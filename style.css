@@ -1,0 +1,76 @@
+* {
+    font-family: 'Fredoka One', cursive;
+}
+
+html, body{
+    background: url('./images/bg5.jpg') no-repeat center center fixed !important;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 5vh;
+}
+#main {
+    height: 100%;
+    font-family: 'Fredoka One', cursive;
+}
+
+#btn-new {
+    font-family: 'Fredoka One', cursive;
+}
+.score-wrapper {
+    color: white;
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+#current-score {
+    font-size: 0.5rem;
+}
+#board-wrapper {
+    height: 60%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#board {    
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 2px;
+    align-items: stretch;
+    pointer-events:auto;
+    -webkit-box-shadow: 2px 7px 36px 21px rgba(247,225,139,0.79);
+    -moz-box-shadow: 2px 7px 36px 21px rgba(247,225,139,0.79);
+    box-shadow: 2px 7px 36px 21px rgba(247,225,139,0.79);
+}
+
+.board-position {
+    background-color: rgba(255, 209, 71,0.5);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 8rem;
+    color: rgb(244, 179, 66);
+}
+.player-score {
+    background-color: rgba(145, 15, 143,0.4);
+    border: 1px solid rgb(145, 15, 143);
+    border-radius:  5px;
+    padding: 5px 5px;
+}
+
+.player-name {
+    font-size: 1.4em;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+.score-num {
+    font-size: 3.5em;
+    text-align: center;
+}
