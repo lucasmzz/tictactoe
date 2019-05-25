@@ -23,7 +23,7 @@ boardRef.addEventListener('click',function(event){
         if (result === 0){
             var player; 
             (currentPlayer === p1) ? player = "X" : player = "O";
-            resultPanel.textContent = player+" is the WINNER!";
+            resultPanel.textContent = player+" WINS!";
             scores[currentPlayer] += 1;
             displayResults();
             boardRef.style.pointerEvents = 'none';
